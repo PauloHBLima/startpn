@@ -1,12 +1,20 @@
-import React from 'react'
-import styled from 'styled-components'
+/*import React from 'react'
 
-const ThowColumnLayout = () => {
+const ThowColumnLayout = ({display,width,position,zIndex,margin,height,left,top,background }) => {
   
-  const columnLogin = styled.img
-  `display: grid;
-  grid-template-columns: 1fr 1fr
-  `;
+  const styles = {
+  'display': 'display',
+   'width': 'width',
+   'height': 'height',
+   'left': 'left',
+   'top': 'top',
+   'position': 'position',
+   'z-index': 'zIndex',
+   'margin': 'margin',
+   'background': 'background'
+  }
 }
 
+
 export default ThowColumnLayout
+*/

@@ -1,9 +1,12 @@
-import React from "react";
-import Cadastro from "./components/Cadastro";
+import React from 'react';
+import Rotas from './routes/routes';
+import '../src/styles/global.css';
 
-function App() {
-  return ( 
-    <div><Cadastro /></div>
+const App = () => {
+  return (
+    
+    < Rotas />
+    
   );
-}
+};
 export default App;
