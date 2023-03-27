@@ -5,6 +5,9 @@ module.exports = {
     extend: {
       colors: {
         'cinza': '#FFFFFF',
+
+        'azul': {
+          marinho: '#476EE6'}
       },
       fontFamily: {
         poppins: ['Poppins']

@@ -5,15 +5,15 @@ import Cadastro from '../components/Form';
 
 const Register = () => {
   return (
-    <section className='flex'>
+    <div className='flex'>
       <div className='w-1/2'>
-        <img src={fundocadastro} alt="" />
+        <img className='' src={fundocadastro} alt="" />
         <img className='absolute top-32 ' src={stevejobs} alt="" />
       </div>
       <div className='w-1/2'>
       <Cadastro />
       </div>
-    </section>
+    </div>
 
   );
 };

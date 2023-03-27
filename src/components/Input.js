@@ -31,21 +31,22 @@ const Input = ({
     marginBottom: marginBottom,
     marginLeft: marginLeft,
     marginRight: marginRight,
-    fontFamily: fontFamily,
+    fontFamily: fontFamily
   };
 
   return (
     <div>
       <label className="block mb-2">{nomeLabel}</label>
-      <span className="flex border w-90 h-1/3 p-1 rounded-xl mr-12 ">
+      <span className="flex border-2 h-1/2 p-1 rounded-xl mr-12 focus:border-4">
         <input
+          className='focus:outline-0'
           type={type}
           placeholder={placeholder}
           style={styleInput}
           borderRadius={borderRadius}
           fontFamily={fontFamily}
         />
-        {possuiItem ? <Imagem /> : null}
+        {possuiItem ? <Imagem/> : null}
       </span>
     </div>
   );
