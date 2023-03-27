@@ -1,5 +1,4 @@
 import React from 'react';
-import Title from './Styles';
 import logo from '../images/svg/logo.svg';
 import Input from './Input';
 import ButtonRetangulo from './ButtonRetangulo';
@@ -9,7 +8,7 @@ const Cadastro = () => {
   return (
     <div>
       <img src={logo} alt="logo" className="mt-8 mb-8" />
-      <Title className="mb-4 Poppins, sans-serif">Cadastro</Title>
+      <p className="text-[#476ee6] font-poppins font-medium text-2xl leading-9 mb-4 ">Cadastro</p>
 
       <form className="flex flex-wrap">
         <Input
