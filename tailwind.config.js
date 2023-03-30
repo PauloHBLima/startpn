@@ -1,25 +1,31 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ['./src/**/*.{html,js}'],
   theme: {
     extend: {
       colors: {
-        'cinza': '#FFFFFF',
-
-        'azul': {
-          marinho: '#476EE6'}
+        cinza: {
+          brancoClaro: '#FFFFFF',
+        },
+        azul: {
+          marinho: '#476EE6',
+        },
+        cinza: {
+          brancoEscuro: '#E5E5E5',
+        },
+        cinzaHover: {
+          cinzaClaro: '#F7F9FB',
+        },
       },
       fontFamily: {
-        poppins: ['Poppins']
+        poppins: ['Poppins'],
       },
       fontWeight: {
         regular: 400,
         medium: 500,
         semibold: 600,
       },
-      
     },
-
   },
   plugins: [],
-}
+};
