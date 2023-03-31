@@ -16,6 +16,9 @@ module.exports = {
         cinzaHover: {
           cinzaClaro: '#F7F9FB',
         },
+        borda: {
+          bordaCinzaClaro: '#D7D7D7'
+        },
       },
       fontFamily: {
         poppins: ['Poppins'],
