@@ -8,6 +8,7 @@ import user from '../images/svg/user.svg';
 import LogoStartpn from '../images/svg/LogoStartpn.svg';
 import message from '../images/svg/message.svg';
 import BoxLayout from './BoxLayout';
+import BoxList from './BoxList';
 
 const Sidebar = () => {
   return (
@@ -40,28 +41,29 @@ const Sidebar = () => {
         </li>
       </ul>
       <div>
-      {/* <h1 className=''>Playbooks</h1> */}
+        <div>
+      <h1 className='ml-16 mt-26px font-poppins text-3xl text-azul-marinho font-semibold'>Playbooks</h1>
+        </div>
+        <div>
       <BoxLayout
         width="321px"
         height="600px"
-        marginTop="70px"
+        marginTop="30px"
         marginLeft="65px"
         marginRight="20px"
-        marginBottom="0px"
         borderColor="#D7D7D7"
         background="#FFFFFF"
         borderRadius="10px"
-      />
+        Text= "Categorias"
+        />
+        </div>
       </div>
       <div>
 
       <BoxLayout
         width="850px"
         height="231px"
-        marginTop="70px"
-        marginLeft="0px"
-        marginRight="0px"
-        marginBottom="0px"
+        marginTop="90px"
         borderWidth="1px"
         borderColor="#D7D7D7"
         background="#FFFFFF"
@@ -71,9 +73,6 @@ const Sidebar = () => {
         width="850px"
         height="231px"
         marginTop="20px"
-        marginLeft="0px"
-        marginRight="0px"
-        marginBottom="0px"
         borderWidth="1px"
         borderColor="#D7D7D7"
         background="#FFFFFF"
