@@ -1,6 +1,6 @@
 import React from 'react'
 
-const BoxLayout = ({marginTop,marginBottom,marginLeft,marginRight,width,height}) => {
+const BoxLayout = ({marginTop,marginBottom,marginLeft,marginRight,width,height,background,borderColor,borderWidth,borderRadius}) => {
 
   const styleBox = {
     marginTop: marginTop,
@@ -8,12 +8,15 @@ const BoxLayout = ({marginTop,marginBottom,marginLeft,marginRight,width,height})
     marginLeft: marginLeft,
     marginRight: marginRight,
     width: width,
-    height: height
+    height: height,
+    background: background,
+    borderColor: borderColor,
+    borderWidth: borderWidth,
+    borderRadius: borderRadius,
   }
 
   return (
-    <div className='bg-white rounded-xl border-2 border-borda-bordaCinzaClaro'  style={styleBox}>
-    </div>
+    <div className=''  style={styleBox}></div>
   )
 }
 

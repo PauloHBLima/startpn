@@ -1,19 +1,21 @@
 import React from 'react';
 
-const SidebarItem = ({ src, alt, Text }) => {
+const SidebarItem = ({ src, alt, Text, marginLeft }) => {
   const styleSideBarItem = {
     src: src,
     alt: alt,
     Text: Text,
+    marginLeft: marginLeft,
   };
 
   return (
-    <div className="flex items-center bg-white text-sm text-[#787486] cursor-pointer rounded-lg mt-0 mr-3.5 mb-5 hover:bg-cinzaHover-cinzaClaro hover:text-azul-marinho">
+    <div className="flex items-center">
       <img
-        className="mr-5 cursor-pointer"
+      className=''
         src={src}
         alt={alt}
         style={styleSideBarItem}
+        marginLeft={marginLeft}
       />
       {Text}
     </div>
