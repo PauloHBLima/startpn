@@ -2,20 +2,17 @@ import React from 'react';
 
 const SidebarItem = ({ src, alt, Text, marginLeft }) => {
   const styleSideBarItem = {
-    src: src,
-    alt: alt,
-    Text: Text,
     marginLeft: marginLeft,
+    stroke: '#476EE6'
   };
 
   return (
     <div className="flex items-center">
       <img
-      className=''
+      className='mr-4 '
         src={src}
         alt={alt}
         style={styleSideBarItem}
-        marginLeft={marginLeft}
       />
       {Text}
     </div>

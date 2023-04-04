@@ -41,43 +41,6 @@ const Sidebar = () => {
         </li>
       </ul>
       <div>
-        <div>
-      <h1 className='ml-16 mt-26px font-poppins text-3xl text-azul-marinho font-semibold'>Playbooks</h1>
-        </div>
-        <div>
-      <BoxLayout
-        width="321px"
-        height="600px"
-        marginTop="30px"
-        marginLeft="65px"
-        marginRight="20px"
-        borderColor="#D7D7D7"
-        background="#FFFFFF"
-        borderRadius="10px"
-        Text= "Categorias"
-        />
-        </div>
-      </div>
-      <div>
-
-      <BoxLayout
-        width="850px"
-        height="231px"
-        marginTop="90px"
-        borderWidth="1px"
-        borderColor="#D7D7D7"
-        background="#FFFFFF"
-        borderRadius="10px"
-      />
-      <BoxLayout
-        width="850px"
-        height="231px"
-        marginTop="20px"
-        borderWidth="1px"
-        borderColor="#D7D7D7"
-        background="#FFFFFF"
-        borderRadius="10px"
-      />
       </div>
     </div>
   );
