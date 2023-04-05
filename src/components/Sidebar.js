@@ -7,8 +7,7 @@ import taskSquare from '../images/svg/taskSquare.svg';
 import user from '../images/svg/user.svg';
 import LogoStartpn from '../images/svg/LogoStartpn.svg';
 import message from '../images/svg/message.svg';
-import BoxLayout from './BoxLayout';
-import BoxList from './BoxList';
+
 
 const Sidebar = () => {
   return (

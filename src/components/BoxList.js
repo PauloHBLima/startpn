@@ -1,6 +1,6 @@
 import React from 'react'
 
-const BoxList = ({Text,marginLeft,marginTop,marginBottom,marginRight}) => {
+const BoxList = ({Text,marginLeft,marginTop,marginBottom,marginRight,src,alt}) => {
   
     const StyleBoxList = {
       Text: Text,
@@ -11,11 +11,10 @@ const BoxList = ({Text,marginLeft,marginTop,marginBottom,marginRight}) => {
     }
     
     return (
-      <ul className='items-center ml-3 mt-3 text-sm text-[#787486]'>
-        <li style={StyleBoxList}>
+        <li className='mb-6 hover:bg-cinzaHover-cinzaClaro hover:text-azul-marinho rounded-lg p-2' key={Text.id} style={StyleBoxList}>
         {Text}
         </li>
-      </ul>
+      
   )
 }
 

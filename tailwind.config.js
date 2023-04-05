@@ -20,7 +20,10 @@ module.exports = {
           cinzaClaro: '#F7F9FB',
         },
         borda: {
-          bordaCinzaClaro: '#D7D7D7'
+          bordaCinzaClaro: '#D7D7D7',
+        },
+        title: {
+          titleblack: '#101828',
         },
       },
       fontFamily: {
