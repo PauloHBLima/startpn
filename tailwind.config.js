@@ -25,6 +25,10 @@ module.exports = {
         title: {
           titleblack: '#101828',
         },
+        custom: {
+          cinzaScroll: '#D8D8D8',
+          cinzaEscuroScroll: 'rgba(0, 0, 0, 0.33)',
+        },
       },
       fontFamily: {
         poppins: ['Poppins'],
@@ -36,5 +40,8 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require('tailwind-scrollbar')({ nocompatible: true })],
+  variants: {
+    scrollbar: ['rounded'],
+  },
 };
