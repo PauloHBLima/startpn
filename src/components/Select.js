@@ -1,7 +1,6 @@
 import React from 'react';
-import Imagem from './Imagem';
 
-const Input = ({
+const Select = (
   type,
   placeholder,
   padding,
@@ -18,8 +17,8 @@ const Input = ({
   marginRight,
   possuiItem,
   fontFamily,
-}) => {
-  const styleInput = {
+) => {
+  const styleSelect = {
     padding: padding,
     color: color,
     borderRadius: borderRadius,
@@ -32,26 +31,25 @@ const Input = ({
     marginLeft: marginLeft,
     marginRight: marginRight,
     fontFamily: fontFamily,
+    nomeLabel: nomeLabel,
   };
 
   return (
-    <div>
-      <label className="block mb-2">{nomeLabel}</label>
+    <div className="">
       <span className="flex border-2 h-1/2 p-1 rounded-xl mr-12 focus:border-4">
-        <input
-          className='focus:outline-0'
+        <label className="block mb-2">{nomeLabel}</label>
+        <select
+          className="focus:outline-0"
           type={type}
           placeholder={placeholder}
-          style={styleInput}
+          style={styleSelect}
           borderRadius={borderRadius}
           fontFamily={fontFamily}
-        />
-        {possuiItem ? <Imagem/> : null}
+          id='id'
+          ></select>
       </span>
     </div>
   );
 };
 
-export default Input;
-
-/* '1px solid #D7D7D7' */
+export default Select;

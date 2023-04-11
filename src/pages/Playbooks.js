@@ -2,6 +2,8 @@ import React from 'react';
 import Sidebar from '../components/Sidebar';
 import SidebarItem from '../components/SidebarItem';
 import BoxLayout from '../components/BoxLayout';
+import Ellipese from '../images/svg/Ellipse.svg';
+import maisIcone from '../images/svg/maisIcone.svg';
 
 const Playbooks = () => {
   const itens = [
@@ -72,6 +74,14 @@ const Playbooks = () => {
             borderRadius="10px"
             Text={video}
           />
+        <div className='flex items-center mt-12 justify-end '>
+          <img src={Ellipese} alt="" />
+          <div className='absolute mr-[21.5px]'>
+          <img src={maisIcone} alt="" />
+          </div>
+          
+          
+        </div>
         </div>
       </div>
     </div>

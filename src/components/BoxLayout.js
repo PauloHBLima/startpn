@@ -1,6 +1,9 @@
 import React from 'react';
 import BoxList from './BoxList';
 import Button from './Button';
+import Input from './Input';
+
+
 
 const BoxLayout = ({
   marginTop,
@@ -15,6 +18,7 @@ const BoxLayout = ({
   borderRadius,
   Text,
   title,
+  scrollbar,
 }) => {
   const styleBox = {
     marginTop: marginTop,
@@ -27,6 +31,7 @@ const BoxLayout = ({
     borderColor: borderColor,
     borderWidth: borderWidth,
     borderRadius: borderRadius,
+    scrollbar: scrollbar,
   };
 
   return (
@@ -58,6 +63,9 @@ const BoxLayout = ({
           <BoxList Text={itens} />
         ))}
       </ul>
+      <div>
+      
+      </div>
     </div>
   );
 };
