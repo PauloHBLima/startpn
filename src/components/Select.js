@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Select = (
-  type,
+ {type,
   placeholder,
   padding,
   nomeLabel,
@@ -15,9 +15,8 @@ const Select = (
   marginBottom,
   marginLeft,
   marginRight,
-  possuiItem,
   fontFamily,
-) => {
+}) => {
   const styleSelect = {
     padding: padding,
     color: color,
@@ -31,23 +30,22 @@ const Select = (
     marginLeft: marginLeft,
     marginRight: marginRight,
     fontFamily: fontFamily,
-    nomeLabel: nomeLabel,
   };
 
   return (
-    <div className="">
-      <span className="flex border-2 h-1/2 p-1 rounded-xl mr-12 focus:border-4">
-        <label className="block mb-2">{nomeLabel}</label>
-        <select
-          className="focus:outline-0"
-          type={type}
-          placeholder={placeholder}
-          style={styleSelect}
-          borderRadius={borderRadius}
-          fontFamily={fontFamily}
-          id='id'
-          ></select>
-      </span>
+    <div>
+
+      <label className="block mb-2">{nomeLabel}</label>
+      <select
+        type={type}
+        placeholder={placeholder}
+        className="focus:outline-0 flex border-2 h-1/2 p-1 rounded-xl mr-12"
+        style={styleSelect}
+        width={width}
+      >
+        <option value="exemplo">exemplo 1</option>
+        <option value="exemplo">exemplo 2</option>
+      </select>
     </div>
   );
 };

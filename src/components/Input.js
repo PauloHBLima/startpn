@@ -45,6 +45,7 @@ const Input = ({
           style={styleInput}
           borderRadius={borderRadius}
           fontFamily={fontFamily}
+          height={height}
         />
         {possuiItem ? <Imagem/> : null}
       </span>
