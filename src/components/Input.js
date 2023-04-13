@@ -54,5 +54,3 @@ const Input = ({
 };
 
 export default Input;
-
-/* '1px solid #D7D7D7' */

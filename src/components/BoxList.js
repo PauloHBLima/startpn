@@ -12,9 +12,10 @@ const BoxList = ({Text,marginLeft,marginTop,marginBottom,marginRight}) => {
       marginBottom: marginBottom,
       marginRight: marginRight
     }
+    
 
     return (
-        <li className='flex mb-2 hover:bg-cinzaHover-cinzaClaro hover:text-azul-marinho rounded-lg p-2' key={Text.id} style={StyleBoxList}>
+        <li className='flex mb-2 hover:bg-cinzaHover-cinzaClaro hover:text-azul-marinho rounded-lg p-2' key={Text} /* key={Text.id}  */style={StyleBoxList}>
         {Text === 'Adicionar outra categoria' ? <SidebarItem 
         src={Add}
         marginLeft=""/> : null}
