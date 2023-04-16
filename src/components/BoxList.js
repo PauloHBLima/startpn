@@ -3,14 +3,15 @@ import SidebarItem from './SidebarItem'
 import Pen from '../images/svg/Pen.svg'
 import Add from '../images/svg/add.svg'
 
-const BoxList = ({Text,marginLeft,marginTop,marginBottom,marginRight}) => {
+const BoxList = ({Text,marginLeft,marginTop,marginBottom,marginRight,justifyContent}) => {
 
     const StyleBoxList = {
       Text: Text,
       marginLeft: marginLeft,
       marginTop: marginTop,
       marginBottom: marginBottom,
-      marginRight: marginRight
+      marginRight: marginRight,
+      justifyContent: justifyContent,
     }
     
 

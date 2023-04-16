@@ -22,7 +22,7 @@ const Playbooks = () => {
   const video = [
   <iframe
    width="560" 
-   height="315" 
+   height="315"
    src="https://www.youtube.com/embed/RG_eyn0fRXs" title="YouTube video player" 
    frameborder="0" 
    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
@@ -63,6 +63,7 @@ const Playbooks = () => {
             borderRadius="10px"
             Text={methodologies}
           />
+          
           <BoxLayout
             title="Assista o conteúdo"
             width="850px"
@@ -72,8 +73,10 @@ const Playbooks = () => {
             borderColor="#D7D7D7"
             background="#FFFFFF"
             borderRadius="10px"
+            justifyContent="center"
             Text={video}
           />
+          
         <div className='flex items-center mt-12 justify-end '>
           <img src={Ellipese} alt="" />
           <div className='absolute mr-[21.5px]'>

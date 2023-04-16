@@ -1,7 +1,6 @@
 import React from 'react';
 import BoxList from './BoxList';
 import Button from './Button';
-import Input from './Input';
 
 
 

@@ -9,7 +9,7 @@ const SidebarItem = ({ src, alt, Text, marginLeft }) => {
   return (
     <div className="flex items-center">
       <img
-      className='mr-4 '
+      className='mr-4'
         src={src}
         alt={alt}
         style={styleSideBarItem}

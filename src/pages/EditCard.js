@@ -6,8 +6,9 @@ import Select from '../components/Select';
 import Seta from '../images/svg/seta.svg';
 import Rectangule from '../images/svg/Rectangle 1.svg';
 import Editors from '../images/svg/Editors.svg';
+import CardEdit from '../components/CardEdit';
 
-const videoExemplo = [
+const video = [
   <iframe
     width="560"
     height="315"
@@ -22,7 +23,8 @@ const videoExemplo = [
 const EditCard = () => {
   return (
     <div className="flex w-screen h-screen bg-cinza-brancoEscuro">
-      <Sidebar />
+      <Sidebar 
+      className=""/>
       <SidebarItem />
       <div className="ml-[81px]">
         <div className="">
@@ -55,16 +57,19 @@ const EditCard = () => {
               </div>
             </div>
           </div>
-
-          <div className="flex text-sm text-[#787486] cursor-pointer rounded-lg bg-white border-2 border-borda-bordaCinzaClaro h-[400px] w-[1080px] mb-[20px]">
-            <div>
-              <img className="w-screen" src={Editors} alt="" />
-              <img src={videoExemplo} z-tabIndex="" alt="" />
-            </div>
+          <CardEdit 
+          width="1080px"
+          height="400px"
+          marginBottom="20px"
+          src={Editors}
+          Text={video}
+          />
+          {/* <div className='flex items-center mt-12 justify-end '>
+         
+          </div> */}
           </div>
         </div>
       </div>
-    </div>
   );
 };
 
