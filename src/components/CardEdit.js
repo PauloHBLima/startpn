@@ -40,6 +40,7 @@ const CardEdit = ({
     {Text?.map((itens) => (
           <EditItem Text={itens} />
         ))}
+       
     </ul>
     </div>
   )

@@ -8,7 +8,7 @@ import Rectangule from '../images/svg/Rectangle 1.svg';
 import Editors from '../images/svg/Editors.svg';
 import CardEdit from '../components/CardEdit';
 import Button from '../components/Button';
-import Profile from '../images/svg/Profile.svg'
+import Profile from '../images/svg/Profile.svg';
 
 const video = [
   <iframe
@@ -22,15 +22,14 @@ const video = [
   ></iframe>,
 ];
 
-const EditCard = () => {
+const NewCard = () => {
   return (
     <div className="flex w-screen h-screen bg-cinza-brancoEscuro">
-      <Sidebar 
-      className=""/>
+      <Sidebar className="" />
       <SidebarItem />
       <div className="ml-[81px]">
         <div className="">
-        <div className="flex items-center mt-[47px] mb-[49px] justify-between">
+          <div className="flex items-center mt-[47px] mb-[49px] justify-between">
             <div className="flex items-center mr-[27px]">
               <img src={Rectangule} alt="" />
               <div className="absolute ml-[6px]">
@@ -38,7 +37,7 @@ const EditCard = () => {
               </div>
               <div className='ml-[27px]'>
               <h1 className="contents ml-16 mt-26px font-poppins text-3xl text-azul-marinho font-semibold">
-                Editar card
+                Criar card
               </h1>
               </div>
             </div>
@@ -55,7 +54,7 @@ const EditCard = () => {
                   className="text-title-titleblack font-poppins text-base leading-5 font-medium "
                   height="33.8px"
                   borderRadius="7px"
-                  placeholder="Assista o conteúdo"
+                  placeholder="Insira um nome"
                 />
               </div>
               <div className="">
@@ -64,32 +63,32 @@ const EditCard = () => {
               </div>
             </div>
           </div>
-          <CardEdit 
-          width="1080px"
-          height="350px"
-          marginBottom="20px"
-          src={Editors}
-          Text={video}
+          <CardEdit
+            width="1080px"
+            height="350px"
+            marginBottom="20px"
+            src={Editors}
+            placeholder="escreva algo"
           />
-          <div className='flex items-center mt-6 justify-end '>
-          <Button
-                name="Editar"
-                color="#FFFFFF"
-                background="#476EE6"
-                width="102px"
-                height="35px"
-                borderRadius="60px"
-                marginLeft="520px"
-                fontFamily="Poppins"
-                fontStyle="semibold"
-                fontSize="15px"
-                lineHeight="24px"
-              />
-          </div>
+          <div className="flex items-center mt-6 justify-end ">
+            <Button
+              name="Criar"
+              color="#FFFFFF"
+              background="#476EE6"
+              width="102px"
+              height="35px"
+              borderRadius="60px"
+              marginLeft="520px"
+              fontFamily="Poppins"
+              fontStyle="semibold"
+              fontSize="15px"
+              lineHeight="24px"
+            />
           </div>
         </div>
       </div>
+    </div>
   );
 };
 
-export default EditCard;
+export default NewCard;

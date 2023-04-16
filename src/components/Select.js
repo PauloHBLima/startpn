@@ -43,6 +43,7 @@ const Select = (
         style={styleSelect}
         width={width}
       >
+        <option value="exemplo">Selecione</option>
         <option value="exemplo">Playbook de vendas</option>
         <option value="exemplo">exemplo 2</option>
       </select>
